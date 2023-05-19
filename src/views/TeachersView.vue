@@ -74,7 +74,9 @@
           <i class="bx bx-dots-horizontal-rounded cursor-pointer text-2xl"></i>
         </div>
         <div class="text-center">
-          <h1 class="text-xl font-medium text-[#303972]">{{ i.name }} {{ i.surname }}</h1>
+          <h1 class="text-xl font-medium text-[#303972]">
+            <span>{{ i.name }}</span> <span>{{ i.surname }}</span>
+          </h1>
           <p>{{ i.subject }}</p>
         </div>
         <div class="mx-auto text-2xl text-white">
@@ -91,13 +93,31 @@
             <p><i class="bx bxs-left-arrow cursor-pointer"></i></p>
           </li>
           <li>
-            <p :class="{'bg-blue-700 text-white': pgnumber==1}" class="py-1 px-3 border-2 border-[#A098AE] cursor-pointer rounded-full mx-2" @click="Page(1)">1</p>
+            <p
+              :class="{ 'bg-blue-700 text-white': pgnumber == 1 }"
+              class="py-1 px-3 border-2 border-[#A098AE] cursor-pointer rounded-full mx-2"
+              @click="Page(1)"
+            >
+              1
+            </p>
           </li>
           <li>
-            <p :class="{'bg-blue-700 text-white': pgnumber==2}" class="py-1 px-3 border-2 border-[#A098AE] cursor-pointer rounded-full mx-2" @click="Page(2)">2</p>
+            <p
+              :class="{ 'bg-blue-700 text-white': pgnumber == 2 }"
+              class="py-1 px-3 border-2 border-[#A098AE] cursor-pointer rounded-full mx-2"
+              @click="Page(2)"
+            >
+              2
+            </p>
           </li>
           <li>
-            <p :class="{'bg-blue-700 text-white': pgnumber==3}" class="py-1 px-3 border-2 border-[#A098AE] cursor-pointer rounded-full mx-2" @click="Page(3)">3</p>
+            <p
+              :class="{ 'bg-blue-700 text-white': pgnumber == 3 }"
+              class="py-1 px-3 border-2 border-[#A098AE] cursor-pointer rounded-full mx-2"
+              @click="Page(3)"
+            >
+              3
+            </p>
           </li>
           <li>
             <p><i class="bx bxs-right-arrow cursor-pointer"></i></p>
